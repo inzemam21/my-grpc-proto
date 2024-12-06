@@ -12,8 +12,8 @@ option go_package = "github.com/inzemam21/my-grpc-proto/protogen/go/bank";
 service BankService {
   rpc GetCurrentBalance(CurrentBalanceRequest) returns (CurrentBalanceResponse) {}
 
-//   rpc FetchExchangeRates(ExchangeRateRequest) 
-//   returns (stream ExchangeRateResponse) {}
+  rpc FetchExchangeRates(ExchangeRateRequest) 
+  returns (stream ExchangeRateResponse) {}
 
 //   rpc SummarizeTransactions(stream Transaction)
 //   returns (TransactionSummary) {}
